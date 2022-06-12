@@ -1,0 +1,123 @@
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(216, 12%, 8%);
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.main-card,
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    hsl(213, 19%, 18%),
+    hsl(213, 19%, 11%)
+  );
+  margin: auto;
+  border-radius: 10px;
+  padding: 3rem;
+  width: 30vw;
+  font-family: "Overpass", sans-serif;
+}
+
+.star__row {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+.star__box {
+  padding: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  background-color: hsl(216, 12%, 34%);
+  text-align: left;
+}
+.text {
+  justify-items: center;
+  text-align: left;
+  margin: auto;
+}
+.text__header {
+  font-size: 2rem;
+  color: #fff;
+}
+.text__para {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  color: hsl(216, 12%, 54%);
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.btns {
+}
+.btn {
+  border-radius: 50%;
+  padding: 1.3rem 1.5rem;
+  border: none;
+  font-size: 1.2rem;
+  color: hsl(217, 12%, 63%);
+  background-color: hsl(216, 12%, 24%);
+}
+.btn:not(:last-child) {
+  margin-right: 2rem;
+}
+.btn:hover {
+  background-color: hsl(217, 12%, 63%);
+  color: #fff;
+  cursor: pointer;
+}
+.btn:active {
+  background-color: hsl(25, 97%, 53%);
+}
+.btn--active {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+}
+.submit {
+  padding: 1rem;
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  border-radius: 50px;
+  font-size: 1.4rem;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+.submit:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  text-align: center;
+}
+.modal__herader {
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  background-color: hsl(216, 12%, 24%);
+  color: hsl(25, 97%, 53%);
+  border-radius: 50px;
+}
+.modal__header--main {
+  font-size: 2rem;
+  color: #fff;
+}
+.modal__para {
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  color: hsl(216, 12%, 54%);
+}
